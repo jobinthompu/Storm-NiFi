@@ -27,11 +27,19 @@ public class NiFiStormTopology {
 
 public static void main( String[] args ) throws AlreadyAliveException, InvalidTopologyException, AuthorizationException {
 
+	if (!(args.length == 1)) {
+	    System.err.println("###################################################################################################");
+	    System.err.println("#### Usage: storm jar NiFiStormTopology.jar NiFi.NiFiStormTopology </LocalPath/to/save/output> ####");
+	    System.err.println("###################################################################################################");
+	    System.exit(2);
+	  }
+	
 final String Path = args[0];
+
 // Build a Site-To-Site client config
 SiteToSiteClientConfig clientConfig = new SiteToSiteClient.Builder()
 .url("http://localhost:8099/nifi")
-.portName("OUT")
+.portName("OUTS")
 .buildConfig();
 // Build a topology starting with a NiFiSpout
 TopologyBuilder builder = new TopologyBuilder();
