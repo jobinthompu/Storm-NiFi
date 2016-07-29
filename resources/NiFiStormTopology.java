@@ -39,7 +39,7 @@ final String Path = args[0];
 // Build a Site-To-Site client config
 SiteToSiteClientConfig clientConfig = new SiteToSiteClient.Builder()
 .url("http://localhost:8099/nifi")
-.portName("OUTS")
+.portName("OUT")
 .buildConfig();
 // Build a topology starting with a NiFiSpout
 TopologyBuilder builder = new TopologyBuilder();
