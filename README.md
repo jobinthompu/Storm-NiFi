@@ -77,3 +77,28 @@ nifi.remote.input.secure=false
 # ls -l /tmp | grep MyFile_
 ```
 
+## Making Config changes to Topology:
+
+11) To make changes in NiFiStormTopology.java and re-submit the topology, use following steps:
+
+```
+# vi /opt/Storm-NiFi/resources/NiFi/NiFiStormTopology.java
+```
+12) Once changes are done, compile NiFiStormTopology.java file and update the jar with latest classfiles:
+
+```
+# cd /opt/Storm-NiFi/resources
+# javac -cp ".:Storm_Nifi.jar" NiFi/NiFiStormTopology.java
+# jar uf Storm_Nifi.jar  NiFi/
+```
+
+13) No you can re-submit the topologies with updated jars [follow step 9].
+
+
+### References:
+
+* [ bbende's - nifi-storm](https://github.com/apache/nifi/tree/master/nifi-external/nifi-storm-spout/src/main/java/org/apache/nifi/storm)
+
+Thanks,
+
+Jobin George
