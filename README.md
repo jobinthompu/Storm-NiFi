@@ -66,7 +66,7 @@ nifi.remote.input.secure=false
 
 8) Lets Go back to the NiFi Web UI and start the flow we created, make sure nothing is wrong and you shall see data flowing and stuck in the connection to output port "**OUT**"
 
-9) Lets submit storm topology with below command [Assuming nifi is running on localhost:8099 and data is available on port 'OUT'. If you need to make any minor changes in the code  you can follow instruction starting step 11. **MyFile_** is the prefix of the file_name]
+9) Lets submit storm topology with below command [Assuming nifi is running on localhost:8099 and data is available on port 'OUT'. If you need to make any minor changes in the code  you can follow instruction starting step 11. **MyFile_** is the prefix of the local files to be created]
 
 ```
 # storm jar /opt/Storm-NiFi/resources/Storm_Nifi.jar NiFi.NiFiStormTopology /tmp/MyFile_
