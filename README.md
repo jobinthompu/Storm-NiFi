@@ -102,5 +102,4 @@ nifi.remote.input.secure=false
 
 
 Thanks,
-
 Jobin George
