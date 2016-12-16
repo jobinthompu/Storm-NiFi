@@ -29,7 +29,7 @@ For Storm, we will use this same mechanism - we will use the Site-to-Site protoc
 # vi /opt/HDF-1.2.0.0/nifi/conf/nifi.properties
 ```
 
-2) Change NIFI http port to run on 8090 as default 8080 will conflict with Ambari web UI
+2) Change NIFI http port to run on 8099 as default 8080 will conflict with Ambari web UI
 
 ```
 # web properties #
