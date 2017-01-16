@@ -1,4 +1,4 @@
-# NiFi Site-to-Site Direct streaming to Storm 
+# NiFi Site-to-Site Direct streaming to Storm [HDF-1.2 or NiFi-0.7.x]
 
 
 ## Short Description
